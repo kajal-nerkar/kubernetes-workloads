@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: project-plato
+  name: db1
+  labels:
+    app: db1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db1
+  template:
+    metadata:
+      labels:
+        app: db1
+    spec:
+      containers:
+      - name: busybox
+        image: busybox:1.32.0
+        command: ['sh', '-c', 'echo "Hello, World!" | nc -lk -p 6379']
+        ports:
+        - containerPort: 6379
