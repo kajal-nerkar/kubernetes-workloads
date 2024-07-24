@@ -84,10 +84,6 @@ k8s-manifests/
 
   **Access Prometheus UI:**
     kubectl port-forward -n project-plato svc/prometheus-kube-prometheus-prometheus 9090:9090
+   
 ```
-
-
-
-
-  
-
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/687c36be-0237-4c84-a39d-9f64b0441142">
