@@ -1,4 +1,4 @@
-# Kubernetes Workloads Challange
+# PART-1 Kubernetes Workloads Challange
 
 ## Overview
 This Project involves deploying a microservices architecture using Kubernetes. This architecture includes backend services, database deployments, monitoring, and network policies to ensure a secure and observable environment.
@@ -84,6 +84,59 @@ k8s-manifests/
 
   **Access Prometheus UI:**
     kubectl port-forward -n project-plato svc/prometheus-kube-prometheus-prometheus 9090:9090
-   
 ```
 <img width="949" alt="image" src="https://github.com/user-attachments/assets/687c36be-0237-4c84-a39d-9f64b0441142">
+
+# Part 2 - Infrastructure Plan
+
+## Objective:
+Create a plan to make workloads available publicly in a production environment, prioritizing security and developer collaboration.
+```
+## Technologies and Tools:
+1. **Kubernetes**: Manage containerized applications.
+2. **Helm**: Manage Kubernetes applications with Helm charts.
+3. **Jenkins/GitLab CI/CD**: Continuous integration and delivery pipeline.
+4. **GitHub/GitLab**: Source code management.
+5. **Terraform**: Provision cloud infrastructure.
+6. **Prometheus & Grafana**: Monitoring and visualization.
+7. **ELK Stack**: Logging (Elasticsearch, Logstash, Kibana).
+8. **Istio**: Service mesh security.
+9. **Vault**: Manage secrets securely.
+10. **Slack/Microsoft Teams**: Team communication and alerts.
+```
+```
+## Deployment Plan:
+1. **Infrastructure Setup**:
+   - Use Terraform to provision cloud infrastructure.
+   - Set up a Kubernetes cluster with multiple nodes.
+
+2. **CI/CD Pipeline**:
+   - Set up Jenkins or GitLab CI/CD.
+   - Integrate with GitHub/GitLab for automatic builds and deployments.
+
+3. **Application Deployment**:
+   - Use Helm charts for application deployment.
+   - Implement rolling updates and canary deployments.
+
+4. **Monitoring and Logging**:
+   - Deploy Prometheus and Grafana for monitoring.
+   - Set up the ELK stack for centralized logging.
+
+5. **Security Measures**:
+   - Use Istio for secure microservices communication.
+   - Implement Network Policies in Kubernetes.
+   - Use Vault for secrets management.
+
+6. **Developer Collaboration**:
+   - Provide access to CI/CD pipeline.
+   - Use Slack/Microsoft Teams for communication and alerts.
+```
+## Architecture Diagram:
+<img width="821" alt="image" src="https://github.com/user-attachments/assets/efd03b08-0d74-486c-96f3-f262c015b72f">
+
+## Additional Considerations:
+- Implement RBAC in Kubernetes for permissions.
+- Regularly update and patch components.
+- Conduct periodic security audits.
+
+By following this plan, developers can manage deployments efficiently while maintaining security and high availability.
