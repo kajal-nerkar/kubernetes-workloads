@@ -1,4 +1,4 @@
-# PART-1 Kubernetes Workloads Challange
+# Part 1 - Kubernetes Workloads
 
 ## Overview
 This Project involves deploying a microservices architecture using Kubernetes. This architecture includes backend services, database deployments, monitoring, and network policies to ensure a secure and observable environment.
